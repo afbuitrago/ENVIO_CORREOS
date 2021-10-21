@@ -1,0 +1,533 @@
+function AREAS()
+{
+  ARQUITECTURA();
+  DISPONIBILIDAD_DE_APLICACIONES();
+  DISPONIBILIDAD_DE_CANALES();
+  GESTION_DE_SERVICIOS_DE_TI();
+  GESTION_DE_USUARIOS();
+  INFORMÁTICA();
+  INFRAESTRUCTURA();
+  INFRAESTRUCTURA_VIRTUALIZACION();
+  MICROINFORMATICA();
+  REDES_Y_TELECOMUNICACIONES();
+  SEGURIDAD_DE_TI();
+  TECNOLOGIA_TRANSACCIONAL();
+  INFRAESTRUCTURA_SOA();
+  APLICATIVOS_ANALITICA_Y_ROBOTICA();
+  SEGURIDAD_DE_LA_INFORMACION();
+  TELEFONO_ROJO();
+  LEASING();
+ 
+ 
+}
+ 
+ 
+function ARQUITECTURA()
+{
+  var dstFolderId1 = '1vID-E0amG0Hs_n_qArlomqMK_fwHOnRM';
+  var srcFileId1 = '19v3e99D8VAHyQMjHM9k6cQTGIOP1W6bd4bTJ1hLk8rg';
+  var srcFile = DriveApp.getFileById(srcFileId1);
+  var dstFolder = DriveApp.getFolderById(dstFolderId1);
+  var date = Utilities.formatDate(new Date(), "GMT+1", "dd/MM/yyyy")
+  var nameFile = date+"_"+srcFile.getName();
+  var ssnameFile = SpreadsheetApp.create(nameFile);
+  var dstFileId1 = ssnameFile.getId();
+  var dstSheet = 'Hoja 1';
+  var srcRange = 'A1:AE6031';
+  var srcSheet = 'Vulnerabilidades';
+  var idArea = '1'; 
+  function create_Filter(){
+    var  ss = SpreadsheetApp.getActiveSpreadsheet(); 
+    var sheet1 = ss.getSheetByName("Hoja 1"); 
+    var  range = sheet1.getRange("i:i");  
+    //adding the filter
+    var  filter = range.createFilter();  
+    var  Filter_Criteria2 = SpreadsheetApp.newFilterCriteria().whenTextEqualToAny(["ARQUITECTURA"]);
+    var  add_filter2 = filter.setColumnFilterCriteria(9,Filter_Criteria2);
+    var  range1 = sheet1.getDataRange();
+    }
+  
+  DriveApp.getFileById(ssnameFile.getId()).moveTo(dstFolder);
+  copypaste(srcFileId1,srcSheet,srcRange,dstFileId1,dstSheet,srcRange);
+  ActRepo(idArea,dstFileId1);
+}
+ 
+////////////////////////////////////////////////////////////////
+ 
+function DISPONIBILIDAD_DE_APLICACIONES()
+{
+  var dstFolderId1 = '1LL6a-L-mIezlQc9MqnSjBru0B57vqpU8';
+  var srcFileId1 = '17MHZANjzwg6hVWkpGP5oOwJuTQbhWp7x2w1Jxi2V0yo';
+  var srcFile = DriveApp.getFileById(srcFileId1);
+  var dstFolder = DriveApp.getFolderById(dstFolderId1);
+  var date = Utilities.formatDate(new Date(), "GMT+1", "dd/MM/yyyy")
+  var nameFile = date+"_"+srcFile.getName();
+  var ssnameFile = SpreadsheetApp.create(nameFile);
+  var dstFileId1 = ssnameFile.getId();
+  var dstSheet = 'Hoja 1';
+  var srcRange = 'A1:AE6031';
+  var srcSheet = 'Vulnerabilidades';
+  var idArea = '2'; 
+  
+  DriveApp.getFileById(ssnameFile.getId()).moveTo(dstFolder);
+  copypaste(srcFileId1,srcSheet,srcRange,dstFileId1,dstSheet,srcRange);
+  ActRepo(idArea,dstFileId1);
+}
+ 
+////////////////////////////////////////////////////////////////////////////////////
+ 
+function DISPONIBILIDAD_DE_CANALES()
+{  
+  var dstFolderId1 = '1sQPtSQcUoj1GA6m3at9Rd6e4Js8KAQhY';
+  var srcFileId1 = '1OzDAqipnQwJwniZoVlliDeOcI4lXmAyXDfCBICmx7fs';
+  var srcFile = DriveApp.getFileById(srcFileId1);
+  var dstFolder = DriveApp.getFolderById(dstFolderId1);
+  var date = Utilities.formatDate(new Date(), "GMT+1", "dd/MM/yyyy")
+  var nameFile = date+"_"+srcFile.getName();
+  var ssnameFile = SpreadsheetApp.create(nameFile);
+  var dstFileId1 = ssnameFile.getId();
+  var dstSheet = 'Hoja 1';
+  var srcRange = 'A1:AE6031';
+  var srcSheet = 'Vulnerabilidades';
+  var idArea = '3'; 
+  
+  DriveApp.getFileById(ssnameFile.getId()).moveTo(dstFolder);
+  copypaste(srcFileId1,srcSheet,srcRange,dstFileId1,dstSheet,srcRange);
+  ActRepo(idArea,dstFileId1);
+}
+//////////////////////////////////////////////////////////////////////////////
+function GESTION_DE_SERVICIOS_DE_TI ()
+{
+  var dstFolderId1 = '1FZpH5ymaZyLJ_C49Hra24wOIRF_Dl8dm';
+  var srcFileId1 = '1jAt2suoWXAUk_TDCCcXRCGTva1Ng33DVd82gJXpbIKs';
+  var srcFile = DriveApp.getFileById(srcFileId1);
+  var dstFolder = DriveApp.getFolderById(dstFolderId1);
+  var date = Utilities.formatDate(new Date(), "GMT+1", "dd/MM/yyyy")
+  var nameFile = date+"_"+srcFile.getName();
+  var ssnameFile = SpreadsheetApp.create(nameFile);
+  var dstFileId1 = ssnameFile.getId();
+  var dstSheet = 'Hoja 1';
+  var srcRange = 'A1:AE6031';
+  var srcSheet = 'Vulnerabilidades';
+  var idArea = '4'; 
+  
+  DriveApp.getFileById(ssnameFile.getId()).moveTo(dstFolder);
+  copypaste(srcFileId1,srcSheet,srcRange,dstFileId1,dstSheet,srcRange);
+  ActRepo(idArea,dstFileId1);
+}
+ 
+////////////////////////////////////////////////////////////////////////////////////////
+ 
+function GESTION_DE_USUARIOS()
+{
+  var dstFolderId1 = '1zy0oS1k5HQuNFa3P3cPeWLJgqE_8CTVf';
+  var srcFileId1 = '1ZOzknjoBmktgB5zREkzfymj2Y4GfBs0XTLaNfb9y7j4';
+  var srcFile = DriveApp.getFileById(srcFileId1);
+  var dstFolder = DriveApp.getFolderById(dstFolderId1);
+  var date = Utilities.formatDate(new Date(), "GMT+1", "dd/MM/yyyy")
+  var nameFile = date+"_"+srcFile.getName();
+  var ssnameFile = SpreadsheetApp.create(nameFile);
+  var dstFileId1 = ssnameFile.getId();
+  var dstSheet = 'Hoja 1';
+  var srcRange = 'A1:AE6031';
+  var srcSheet = 'Vulnerabilidades';
+  var idArea = '5'; 
+  
+  DriveApp.getFileById(ssnameFile.getId()).moveTo(dstFolder);
+  copypaste(srcFileId1,srcSheet,srcRange,dstFileId1,dstSheet,srcRange);
+  ActRepo(idArea,dstFileId1);
+}
+ 
+////////////////////////////////////////////////////////////////
+ 
+function INFORMÁTICA()
+{
+  var dstFolderId1 = '1lZQFunCxPqLDDG4QRoTeu397a1dcr-Gk';
+  var srcFileId1 = '1eqRtPsrmLYqBEbdjsfRaWKluNavl0GfqFwmHBcXrnX4';
+  var srcFile = DriveApp.getFileById(srcFileId1);
+  var dstFolder = DriveApp.getFolderById(dstFolderId1);
+  var date = Utilities.formatDate(new Date(), "GMT+1", "dd/MM/yyyy")
+  var nameFile = date+"_"+srcFile.getName();
+  var ssnameFile = SpreadsheetApp.create(nameFile);
+  var dstFileId1 = ssnameFile.getId();
+  var dstSheet = 'Hoja 1';
+  var srcRange = 'A1:AE6031';
+  var srcSheet = 'Vulnerabilidades';
+  var idArea = '6'; 
+  
+  DriveApp.getFileById(ssnameFile.getId()).moveTo(dstFolder);
+  copypaste(srcFileId1,srcSheet,srcRange,dstFileId1,dstSheet,srcRange);
+  ActRepo(idArea,dstFileId1);
+}
+ 
+////////////////////////////////////////////////////////////////
+ 
+function INFRAESTRUCTURA()
+{
+  var dstFolderId1 = '1AWyOksZ4pYAcHfpBDfBVoEZsA1-RWP6e';
+  var srcFileId1 = '1R3pwizL0gX0ITN2T9JFUm3mer0nhaO4RFaVNe1dYM2c';
+  var srcFile = DriveApp.getFileById(srcFileId1);
+  var dstFolder = DriveApp.getFolderById(dstFolderId1);
+  var date = Utilities.formatDate(new Date(), "GMT+1", "dd/MM/yyyy")
+  var nameFile = date+"_"+srcFile.getName();
+  var ssnameFile = SpreadsheetApp.create(nameFile);
+  var dstFileId1 = ssnameFile.getId();
+  var dstSheet = 'Hoja 1';
+  var srcRange = 'A1:AE6031';
+  var srcSheet = 'Vulnerabilidades';
+  var idArea = '7'; 
+  
+  DriveApp.getFileById(ssnameFile.getId()).moveTo(dstFolder);
+  copypaste(srcFileId1,srcSheet,srcRange,dstFileId1,dstSheet,srcRange);
+  ActRepo(idArea,dstFileId1);
+}
+ 
+////////////////////////////////////////////////////////////////
+ 
+function INFRAESTRUCTURA_VIRTUALIZACION()
+{
+  var dstFolderId1 = '1oCUIn43QbF8Rm5tMgxr1_C5r_EFJxYCE';
+  var srcFileId1 = '1sdiZ_wPDBWZmGyMbpVHY5OCgR_FilvMbR7bzYCSJko8';
+  var srcFile = DriveApp.getFileById(srcFileId1);
+  var dstFolder = DriveApp.getFolderById(dstFolderId1);
+  var date = Utilities.formatDate(new Date(), "GMT+1", "dd/MM/yyyy")
+  var nameFile = date+"_"+srcFile.getName();
+  var ssnameFile = SpreadsheetApp.create(nameFile);
+  var dstFileId1 = ssnameFile.getId();
+  var dstSheet = 'Hoja 1';
+  var srcRange = 'A1:AE6031';
+  var srcSheet = 'Vulnerabilidades';
+  var idArea = '8'; 
+  
+  DriveApp.getFileById(ssnameFile.getId()).moveTo(dstFolder);
+  copypaste(srcFileId1,srcSheet,srcRange,dstFileId1,dstSheet,srcRange);
+  ActRepo(idArea,dstFileId1);
+}
+ 
+//////////////////////////////////////////////////////////////
+ 
+function  MICROINFORMATICA()
+{
+  var dstFolderId1 = '1hsWgTWlddcIASh_Frz49f_YqhspCSR84';
+  var srcFileId1 = '1JuQHgSMdpLEuSaiE5s7j8OlP-0MD4i600tFiBVzz8EA';
+  var srcFile = DriveApp.getFileById(srcFileId1);
+  var dstFolder = DriveApp.getFolderById(dstFolderId1);
+  var date = Utilities.formatDate(new Date(), "GMT+1", "dd/MM/yyyy")
+  var nameFile = date+"_"+srcFile.getName();
+  var ssnameFile = SpreadsheetApp.create(nameFile);
+  var dstFileId1 = ssnameFile.getId();
+  var dstSheet = 'Hoja 1';
+  var srcRange = 'A1:AE6031';
+  var srcSheet = 'Vulnerabilidades';
+  var idArea = '9'; 
+  
+  DriveApp.getFileById(ssnameFile.getId()).moveTo(dstFolder);
+  copypaste(srcFileId1,srcSheet,srcRange,dstFileId1,dstSheet,srcRange);
+  ActRepo(idArea,dstFileId1);
+}
+ 
+////////////////////////////////////////////////////////////////
+ 
+function REDES_Y_TELECOMUNICACIONES()
+{
+  var dstFolderId1 = '1aLx_Tdu-CNQFLFQJNhFDXw1Ahv-DVJFd';
+  var srcFileId1 = '1-UTGewz85CcJUvMR0ZelhVZ9-jR6GgZd2JAFQI_jdhs';
+  var srcFile = DriveApp.getFileById(srcFileId1);
+  var dstFolder = DriveApp.getFolderById(dstFolderId1);
+  var date = Utilities.formatDate(new Date(), "GMT+1", "dd/MM/yyyy")
+  var nameFile = date+"_"+srcFile.getName();
+  var ssnameFile = SpreadsheetApp.create(nameFile);
+  var dstFileId1 = ssnameFile.getId();
+  var dstSheet = 'Hoja 1';
+  var srcRange = 'A1:AE6031';
+  var srcSheet = 'Vulnerabilidades';
+  var idArea = '10'; 
+  
+  DriveApp.getFileById(ssnameFile.getId()).moveTo(dstFolder);
+  copypaste(srcFileId1,srcSheet,srcRange,dstFileId1,dstSheet,srcRange);
+  ActRepo(idArea,dstFileId1);
+}
+ 
+////////////////////////////////////////////////////////////////
+ 
+function SEGURIDAD_DE_TI()
+{
+  var dstFolderId1 = '17xHAyy_00RZaOkPacnSnZUJ8yjwtVcs5';
+  var srcFileId1 = '1T-GpUVo21SKzCQCXNUetNi2zORWgkQLuJERGfcocsv4';
+  var srcFile = DriveApp.getFileById(srcFileId1);
+  var dstFolder = DriveApp.getFolderById(dstFolderId1);
+  var date = Utilities.formatDate(new Date(), "GMT+1", "dd/MM/yyyy")
+  var nameFile = date+"_"+srcFile.getName();
+  var ssnameFile = SpreadsheetApp.create(nameFile);
+  var dstFileId1 = ssnameFile.getId();
+  var dstSheet = 'Hoja 1';
+  var srcRange = 'A1:AE6031';
+  var srcSheet = 'Vulnerabilidades';
+  var idArea = '11'; 
+  
+  DriveApp.getFileById(ssnameFile.getId()).moveTo(dstFolder);
+  copypaste(srcFileId1,srcSheet,srcRange,dstFileId1,dstSheet,srcRange);
+  ActRepo(idArea,dstFileId1);
+}
+ 
+////////////////////////////////////////////////////////////////
+ 
+function TECNOLOGIA_TRANSACCIONAL()
+{
+  var dstFolderId1 = '1RnC3QVjCbJnvUFUsRjD9PxVfqOw3xKaC';
+  var srcFileId1 = '18nZSIidWbxLO89NNZnJCmAhHmoqX-b7cRW6vKCZu164';
+  var srcFile = DriveApp.getFileById(srcFileId1);
+  var dstFolder = DriveApp.getFolderById(dstFolderId1);
+  var date = Utilities.formatDate(new Date(), "GMT+1", "dd/MM/yyyy")
+  var nameFile = date+"_"+srcFile.getName();
+  var ssnameFile = SpreadsheetApp.create(nameFile);
+  var dstFileId1 = ssnameFile.getId();
+  var dstSheet = 'Hoja 1';
+  var srcRange = 'A1:AE6031';
+  var srcSheet = 'Vulnerabilidades';
+  var idArea = '12'; 
+  
+  DriveApp.getFileById(ssnameFile.getId()).moveTo(dstFolder);
+  copypaste(srcFileId1,srcSheet,srcRange,dstFileId1,dstSheet,srcRange);
+  ActRepo(idArea,dstFileId1);
+}
+ 
+////////////////////////////////////////////////////////////////
+ 
+function INFRAESTRUCTURA_SOA()
+{
+  var dstFolderId1 = '1gyx5M0MTsPZ-rbVI4HoegWro1zQFMDJY';
+  var srcFileId1 = '17sDCup3z95jIcqeyxEmBNU0wy_XmOO22SF0fmeMXLNA';
+  var srcFile = DriveApp.getFileById(srcFileId1);
+  var dstFolder = DriveApp.getFolderById(dstFolderId1);
+  var date = Utilities.formatDate(new Date(), "GMT+1", "dd/MM/yyyy")
+  var nameFile = date+"_"+srcFile.getName();
+  var ssnameFile = SpreadsheetApp.create(nameFile);
+  var dstFileId1 = ssnameFile.getId();
+  var dstSheet = 'Hoja 1';
+  var srcRange = 'A1:AE6031';
+  var srcSheet = 'Vulnerabilidades';
+  var idArea = '13'; 
+  
+  DriveApp.getFileById(ssnameFile.getId()).moveTo(dstFolder);
+  copypaste(srcFileId1,srcSheet,srcRange,dstFileId1,dstSheet,srcRange);
+  ActRepo(idArea,dstFileId1);
+}
+ 
+////////////////////////////////////////////////////////////////
+function APLICATIVOS_ANALITICA_Y_ROBOTICA()
+{
+  var dstFolderId1 = '14P2HAQUNTuX2PhQWxlz_vG1F7p7VwNmg';
+  var srcFileId1 = '1KCj26bHpfI0pcFHDBjC1CzYXNutQfIboSPGg3r9f_h0';
+  var srcFile = DriveApp.getFileById(srcFileId1);
+  var dstFolder = DriveApp.getFolderById(dstFolderId1);
+  var date = Utilities.formatDate(new Date(), "GMT+1", "dd/MM/yyyy")
+  var nameFile = date+"_"+srcFile.getName();
+  var ssnameFile = SpreadsheetApp.create(nameFile);
+  var dstFileId1 = ssnameFile.getId();
+  var dstSheet = 'Hoja 1';
+  var srcRange = 'A1:AE6031';
+  var srcSheet = 'Vulnerabilidades';
+  var idArea = '14'; 
+  
+  DriveApp.getFileById(ssnameFile.getId()).moveTo(dstFolder);
+  copypaste(srcFileId1,srcSheet,srcRange,dstFileId1,dstSheet,srcRange);
+  ActRepo(idArea,dstFileId1);
+}
+ 
+////////////////////////////////////////////////////////////////
+ 
+function SEGURIDAD_DE_LA_INFORMACION()
+{
+  //Es el forlder donde va a crear el archivo de consulta
+  var dstFolderId1 = '1Gp6-k4GeTVCwPvGXIRKrPRJyNYzds2Fq';
+  //Es el archivo original desde donde se va a crear la copia
+  var srcFileId1 = '1_E1v5MCFPTMrgzKwHXo5wBDl9D31WQK76vuwJQZ73Ps';
+  //Es el objeto del srcFileId1
+  var srcFile = DriveApp.getFileById(srcFileId1);
+  //Es el objeto de dstFolderId1
+  var dstFolder = DriveApp.getFolderById(dstFolderId1);
+  //La fecha de ejecución del codigo para que sea cargada en el nombre del archivo nuevo
+  var date = Utilities.formatDate(new Date(), "GMT+1", "dd/MM/yyyy")
+  //Nombre del nuevo archivo que va a incluir la fecha
+  var nameFile = date+"_"+srcFile.getName();
+  //Crea el archivo con base al nombre anterior
+  var ssnameFile = SpreadsheetApp.create(nameFile);
+  //Es el objeto de ssnameFile
+  var dstFileId1 = ssnameFile.getId();
+  //Carga en memoria la hoja1 destino por defecto
+  var dstSheet = 'Hoja 1';
+  //Cargar en memoria el rango origen
+  var srcRange = 'A1:AE6031';
+  //Carga en memoria la hoja origen
+  var srcSheet = 'Vulnerabilidades';
+  //Sera el ID del area y debe hacer match con fila del archivo de reportes 
+  var idArea = '15';  
+  //VARIABLE FILTRO DE AREA
+  var nomArea = "SEGURIDAD DE LA INFORMACION";
+ 
+  
+  //Funcion que copia el archivo nuevo y le pone el nombre con la fecha y lo mueve al folder destino
+  DriveApp.getFileById(ssnameFile.getId()).moveTo(dstFolder);
+  //Hace llamado a la funcion que envia toda la data de el archivo origen al nuevo arrchivo y para eso se le envian 6 variables 
+  copypaste(srcFileId1,srcSheet,srcRange,dstFileId1,dstSheet,srcRange);
+ //Hace filtro de la información a mostrar en los archivos
+  ActFiltro(dstFileId1,dstSheet,nomArea);
+ //Hace llamado a funcion ActRepo y le pasa 2 variables 
+  ActRepo(idArea,dstFileId1);
+}
+ //////////////////////////////////////////////////////////////
+ function TELEFONO_ROJO()
+{
+  //Es el forlder donde va a crear el archivo de consulta
+  var dstFolderId1 = '1JA2Doio5qZyk7drq484u4lYb2wvRe7OH';
+  //Es el archivo original desde donde se va a crear la copia
+  var srcFileId1 = '1sdm5JYIAGAQI54OwV1AKskEDSkv_0s-xoN08KSkUrDU';
+  //Es el objeto del srcFileId1
+  var srcFile = DriveApp.getFileById(srcFileId1);
+  //Es el objeto de dstFolderId1
+  var dstFolder = DriveApp.getFolderById(dstFolderId1);
+  //La fecha de ejecución del codigo para que sea cargada en el nombre del archivo nuevo
+  var date = Utilities.formatDate(new Date(), "GMT+1", "dd/MM/yyyy")
+  //Nombre del nuevo archivo que va a incluir la fecha
+  var nameFile = date+"_"+srcFile.getName();
+  //Crea el archivo con base al nombre anterior
+  var ssnameFile = SpreadsheetApp.create(nameFile);
+  //Es el objeto de ssnameFile
+  var dstFileId1 = ssnameFile.getId();
+  //Carga en memoria la hoja1 destino por defecto
+  var dstSheet = 'Hoja 1';
+  //Cargar en memoria el rango origen
+  var srcRange = 'A1:AE6031';
+  //Carga en memoria la hoja origen
+  var srcSheet = 'Vulnerabilidades';
+  //Sera el ID del area y debe hacer match con fila del archivo de reportes 
+  var idArea = '16';  
+  
+  //Funcion que copia el archivo nuevo y le pone el nombre con la fecha y lo mueve al folder destino
+  DriveApp.getFileById(ssnameFile.getId()).moveTo(dstFolder);
+  //Hace llamado a la funcion que envia toda la data de el archivo origen al nuevo arrchivo y para eso se le envian 6 variables 
+  copypaste(srcFileId1,srcSheet,srcRange,dstFileId1,dstSheet,srcRange);
+  //Hace llamado a funcion ActRepo y le pasa 2 variables 
+  ActRepo(idArea,dstFileId1);
+}
+////////////////////////////////////////////////////////////////////////////////////////////
+function LEASING()
+{
+  //Es el forlder donde va a crear el archivo de consulta
+  var dstFolderId1 = '1VaLLAtKDzUEZfUJUQOJdjFIa1Zi-A_hS';
+  //Es el archivo original desde donde se va a crear la copia
+  var srcFileId1 = '1qscCO4vyC6AsGElLFOVKCUy_WEn2bPMaeCsviCV7X8U';
+  //Es el objeto del srcFileId1
+  var srcFile = DriveApp.getFileById(srcFileId1);
+  //Es el objeto de dstFolderId1
+  var dstFolder = DriveApp.getFolderById(dstFolderId1);
+  //La fecha de ejecución del codigo para que sea cargada en el nombre del archivo nuevo
+  var date = Utilities.formatDate(new Date(), "GMT+1", "dd/MM/yyyy")
+  //Nombre del nuevo archivo que va a incluir la fecha
+  var nameFile = date+"_"+srcFile.getName();
+  //Crea el archivo con base al nombre anterior
+  var ssnameFile = SpreadsheetApp.create(nameFile);
+  //Es el objeto de ssnameFile
+  var dstFileId1 = ssnameFile.getId();
+  //Carga en memoria la hoja1 destino por defecto
+  var dstSheet = 'Hoja 1';
+  //Cargar en memoria el rango origen
+  var srcRange = 'A1:AE6031';
+  //Carga en memoria la hoja origen
+  var srcSheet = 'Vulnerabilidades';
+  //Sera el ID del area y debe hacer match con fila del archivo de reportes 
+  var idArea = '17';  
+  
+  //Funcion que copia el archivo nuevo y le pone el nombre con la fecha y lo mueve al folder destino
+  DriveApp.getFileById(ssnameFile.getId()).moveTo(dstFolder);
+  //Hace llamado a la funcion que envia toda la data de el archivo origen al nuevo arrchivo y para eso se le envian 6 variables 
+  copypaste(srcFileId1,srcSheet,srcRange,dstFileId1,dstSheet,srcRange);
+  //Hace llamado a funcion ActRepo y le pasa 2 variables 
+  ActRepo(idArea,dstFileId1);
+}
+function copypaste(sourceidfile,sourcesheet,sourcerange,destidfile,destisheet,destirange) 
+{
+  //Source file
+  //Abro archivo origen
+  var srcFileActive   = SpreadsheetApp.openById(sourceidfile);
+  //Abro hoja del archivo origen
+  var srcSheetActive  = srcFileActive.getSheetByName(sourcesheet);
+  //Selecciono el rango de la hoja del archivo origen
+  var srcRangeActive  = srcSheetActive.getRange(sourcerange);
+  //Guardo la data del rango de la hoja del archivo origen
+  var data            = srcRangeActive.getValues();
+ 
+  //Destination file
+  //Abro archivo destino
+  var dstFileActive   = SpreadsheetApp.openById(destidfile);
+  //Abro la hoja del archivo destino
+  var dstSheetActive  = dstFileActive.getSheetByName(destisheet);
+ 
+  //Transfer to destination range
+  //Seleccionar el rango destino y lo "creamos" o limpiamos
+  dstSheetActive.getRange(destirange).clearContent();
+  //Pegamos la data en el rango destino
+  dstSheetActive.getRange(destirange).setValues(data);
+}
+ 
+function ActFiltro(dstFileId1,dstSheet,nomArea)
+{
+    var  srcRangoFiltro1 = 'A:AE';
+    var  ss = SpreadsheetApp.openById(dstFileId1); 
+    var  sheet1  = ss.getSheetByName(dstSheet);
+    var  range1 = sheet1.getRange(srcRangoFiltro1);  
+    
+    //Crea variable de filtro
+    var  filter = range1.createFilter();
+ 
+    //adding the filter 1
+    var  Filter_Criteria1 = SpreadsheetApp.newFilterCriteria().whenTextEqualToAny([nomArea]);
+    var  add_filter1 = filter.setColumnFilterCriteria(9,Filter_Criteria1);
+    var  range1 = sheet1.getDataRange();
+ 
+    //adding the filter 2
+    var  Filter_Criteria2 = SpreadsheetApp.newFilterCriteria().setHiddenValues(['ABIERTA CON CONTROL COMPENSATORIO', 'REMEDIADA', 'FALSO POSITIVO', 'PROYECTO/ADMINISTRATIVO'])
+    var  add_filter2 = filter.setColumnFilterCriteria(13,Filter_Criteria2);
+    var  range1 = sheet1.getDataRange();   
+ 
+} 
+ 
+ 
+function ActRepo(idArea,dstFileId1)
+{
+   //Se guarda el id del archivo repositorio
+   var dstRepo = '15jO8W_14cUplH69KSQN6xaibQWjQdvAsSgxFUDQ9Z9I';
+   //Se guarda en variable el nombre der la hoja del archivo repositorio
+   var dstSheet = 'INFORMES';
+   //Guarda en variable, la construcción del link del archivo nuevo a enviar
+   var LinkInforme = 'https://docs.google.com/spreadsheets/d/'+dstFileId1;
+ 
+   //Destination file
+   //Abre el archivo Repositorio
+   var dstFileActive   = SpreadsheetApp.openById(dstRepo);
+   //Abre la hoja INFORMES del archivo Repositorio
+   var dstSheetActive  = dstFileActive.getSheetByName(dstSheet);
+   //Define el rango donde va a pegar el link creado
+   var dstRange = 'B'+idArea;
+ 
+   //Transfer to destination range
+   //Seleccionar el rango destino y lo "creamos" o limpiamos
+   dstSheetActive.getRange(dstRange).clearContent();
+   //Pegamos la data en el rango destino osea se pega el link
+   dstSheetActive.getRange(dstRange).setValue(LinkInforme);
+ 
+    
+}
+ 
+ 
+function RUN()
+{
+  AREAS();
+}
+ 
+ 
+
+
+
+
